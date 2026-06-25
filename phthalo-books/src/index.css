@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  /* --breakpoint-6xl: 72rem; */
+
+  --color-background: #123524;
+  --color-dark-phthalo-green: #0D261A;
+  --color-mint-green: #ADEBB3;
+  --color-burgundy: #800020;
+  --color-cream: #FFFDD0;
+  --color-midnight-blue: #171c2e;
+  --color-gold: #fbbd0b;
+  --color-rosemary: #636B59;
+}
+
+.interactive-transition {
+  @apply transition-all duration-200 ease-in;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+}
